@@ -840,24 +840,7 @@ static void Step2_CollectInfo(LPCTSTR szInputFile, LPCTSTR szOutputFile, LPCTSTR
 			}
 			else if ('$' != sLine[0])
 			{
-				bAdd = false;
-				
-				if (CheckExt(sLine, ".cpp"))
-				{
-					bAdd = true;
-				}
-				else if (CheckExt(sLine, ".h"))
-				{
-					if (!CheckExt(sLine, "ResDef.h") &&
-						!CheckExt(sLine, "Resource.h"))
-					{
-						bAdd = true;
-					}
-					else
-					{
-						bAdd = bAdd;
-					}
-				}
+				bAdd = true;
 
 				if (bAdd)
 				{
