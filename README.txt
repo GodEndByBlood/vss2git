@@ -69,10 +69,6 @@ Step 2:
   Step2_SkippedPaths.txt - list of files that will be skipped by import
 
 
-  Currently only *.cpp && *.h files are imported (other skipped)
-  This is hardcoded in src/Functions/Processor.cpp -> Step2_CollectInfo()
-
-
 Step 3:
   Step3_Grouped.txt      - data prepared for git/svn commit actions (separated by ****)
                            grouped by user but splitter by date
